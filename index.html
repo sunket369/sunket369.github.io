@@ -182,7 +182,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Projects</button>
           </li>
 
           <li class="navbar-item">
@@ -463,7 +463,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title">Affiliations & Collaborations</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -1023,16 +1023,14 @@
 
 
 
-
-
       <!--
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="projects" data-page="projects">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Projects</h2>
         </header>
 
         <section class="blog-posts">
@@ -1040,26 +1038,26 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./projects/phd-thesis.html">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/project_1_header.png" alt="Understanding Pulsar Emission Mechanism Through Single-Pulse Studies" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Thesis</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Nov'25 - present</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Understanding Pulsar Emission Mechanism Through Single-Pulse Studies</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    PhD Dissertation
                   </p>
 
                 </div>
@@ -1068,10 +1066,10 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="./projects/masters-thesis.html">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/project_2_header.jpg" alt="Characterizing Pulsar Emission Widths" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -1081,13 +1079,13 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">July'24 - June'25</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Characterizing Pulsar Emission Widths</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    Master’s Thesis
                   </p>
 
                 </div>
@@ -1259,6 +1257,36 @@
         </section>
 
       </article>
+
+
+      <article class="project-detail" data-page="pulsar-widths">
+
+        <header>
+          <h2 class="h2 article-title">Pulsar Emission Widths</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            This project focuses on developing a Gaussian Process based algorithm
+            to estimate pulsar emission widths across 1200+ pulsars.
+          </p>
+
+          <p>
+            The ON-pulse region is determined using a statistical thresholding
+            approach (kneedle algorithm applied to the CDF of the GP mean).
+          </p>
+        </section>
+
+        <section>
+          <h3 class="h3">Results</h3>
+
+          <img src="./assets/images/plot1.png" alt="Width vs Period" style="width:100%; margin-top:10px;">
+          <p>Width vs Period relation.</p>
+
+        </section>
+
+      </article>
+
 
     </div>
 

@@ -138,6 +138,27 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const projectLinks = document.querySelectorAll("[data-page]");
+
+projectLinks.forEach(link => {
+  link.addEventListener("click", function (e) {
+
+    if (this.tagName.toLowerCase() === "a") {
+      e.preventDefault();
+    }
+
+    const targetPage = this.dataset.page;
+
+    document.querySelectorAll("[data-page]").forEach(page => {
+      page.classList.remove("active");
+    });
+
+    document.querySelector(`[data-page="${targetPage}"]`).classList.add("active");
+
+    window.scrollTo(0, 0);
+  });
+});
+
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
